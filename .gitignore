@@ -1,7 +1,8 @@
-*.egg-info/
+*.egg-info
 *.pyc
 .coverage
 .python-version
-.tox/
-__pycache__/
-dist/
+.tox
+__pycache__
+dist
+.idea

@@ -7,13 +7,15 @@ jobs:
     strategy:
       matrix:
         python-version:
-          - 3.9
-          - 3.8
           - 3.7
-          - 3.6
+          - 3.8
+          - 3.9
+          - '3.10'
+          - '3.11'
         flask-version:
           - 1
           - 2
+          - 3
 
     name: Python ${{ matrix.python-version }} & Flask ${{ matrix.flask-version }}
     steps:
