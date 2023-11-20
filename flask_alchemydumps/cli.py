@@ -88,7 +88,6 @@ def restore(date_id):
         path = backup.target.path / name
 
         if path.exists():
-
             # read file contents
             contents = backup.target.read_file(name)
             fails = list()
@@ -138,7 +137,6 @@ def remove(date_id, assume_yes=False):
     # check if date/id is valid
     backup = Backup()
     if backup.valid(date_id):
-
         # List files to be deleted
         delete_list = tuple(backup.by_timestamp(date_id))
         click.echo("==> Do you want to delete the following files?")

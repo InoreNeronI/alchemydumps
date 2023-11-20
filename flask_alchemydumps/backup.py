@@ -11,7 +11,6 @@ import decouple
 
 
 class CommonTools(object):
-
     TIMESTAMP = strftime("%Y%m%d%H%M%S", gmtime())
 
     @staticmethod
@@ -130,7 +129,6 @@ class RemoteTools(CommonTools):
 
 
 class Backup(object):
-
     DIR = "alchemydumps-backup"
     PRE = "db-bkp"
 

@@ -13,7 +13,6 @@ from .app import Comments, Post, SomeControl, User, db
 
 class TestCommands(TestCase):
     def setUp(self):
-
         # create database
         self.db = db
         self.db.create_all()
@@ -53,7 +52,6 @@ class TestCommands(TestCase):
         return CliRunner().invoke(command, args=args, obj=obj)
 
     def test_create_restore_remove(self):
-
         # assert data was inserted
         posts = Post.query.count()
         authors = User.query.count()
@@ -112,7 +110,6 @@ class TestCommands(TestCase):
         self.assertEqual(len(self.backup.files), 0)
 
     def test_autoclean(self):
-
         # create fake backup dir
         date_ids = (
             "20110824045557",

@@ -27,11 +27,10 @@ class TestSQLAlchemyHelper(TestCase):
 
     def test_get_and_parse_data(self):
         with app.app_context():
-
             # control data
-            user = User(email=u"me@example.etc")
-            post1 = Post(title=u"Post 1", content=u"Lorem...", author_id=1)
-            post2 = Post(title=u"Post 2", content=u"Ipsum...", author_id=1)
+            user = User(email="me@example.etc")
+            post1 = Post(title="Post 1", content="Lorem...", author_id=1)
+            post2 = Post(title="Post 2", content="Ipsum...", author_id=1)
             control = SomeControl(uuid="1")
 
             # feed user table

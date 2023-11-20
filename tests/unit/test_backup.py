@@ -8,7 +8,6 @@ from flask_alchemydumps.backup import Backup
 
 
 class TestBackup(TestCase):
-
     FILES = (
         "BRA-19940704123000-USA.gz",
         "BRA-19940709163000-NED.gz",
